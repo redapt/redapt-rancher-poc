@@ -8,14 +8,14 @@ by Christoph Champ, Redapt, Inc. (January 2017)
 
 ### Local host
 The Ansible playbooks are expecting the following packages and versions to be installed on the host (the Jenkins server, in this case) the playbooks will be run from:
-* Ansible v2.2.x (tested on 2.2.0.0)
+* Ansible v2.2.x (tested on 2.2.1.0)
 * Python v2.7.x (tested on 2.7.12)
 * pip packages:
- * awscli==1.11.36
+ * awscli==1.11.42
  * aws-adfs==0.2.0 (only needed for interacting with the AWS accounts sans IAM user accounts)
  * boto==2.45.0
- * boto3==1.4.3
- * botocore==1.4.93
+ * boto3==1.4.4
+ * botocore==1.5.5
 
 NOTE: Below is an example of how to use `aws-adfs` for AWS accounts without IAM user accounts:
 ```
@@ -24,8 +24,8 @@ aws-adfs login --adfs-host aws-sso.example.com --profile nonprod
 
 ### EC2 instances
 The remote hosts (EC2 instances) that will be running Rancher and/or Kubernetes will have the following packages and versions installed automatically by the related playbooks:
-* Rancher v1.1.4
-* Docker v1.10.3
+* Rancher v1.3.3
+* Docker v1.12.x
 * LVM2
 
 There will also be some extra sysadmin-related packages useful for troubleshooting installed. For a complete list, see `roles/sysadmin/tasks/main.yml`
