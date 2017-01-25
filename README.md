@@ -34,12 +34,12 @@ There will also be some extra sysadmin-related packages useful for troubleshooti
 
 See [Compatibility Matrix](http://rancher.com/support-maintenance-terms/) for details.
 
-| Rancher Version | Release Date | Host OS                                                      | Kubernetes             | Docker        |
-|-----------------|--------------|--------------------------------------------------------------|------------------------|---------------|
-| 1.3.1           | 2017-01-13   | Ubuntu 14.04; Ubuntu 16.04; RHEL/CentOS 7.x; RancherOS 0.7.1 | 1.4.6                  | 1.12.x        |
-| 1.2.2           | 2016-12-01   | Ubuntu 14.04; Ubuntu 16.04; RHEL/CentOS 7.x; RancherOS 0.7.1 | 1.4.6                  | 1.12.x        |
-| 1.1.4           | 2016-06-30   | Ubuntu 14.04; Ubuntu 15.10; RHEL/CentOS 7.x; RancherOS 0.5.0 | 1.2.4 + Docker 1.10.3<sup>$</sup> | 1.10.x 1.11.x |
-| 1.0.2           | 2016-03-28   | Ubuntu 14.04; Ubuntu 15.10; RHEL/CentOS 7.x; RancherOS 0.4.0 | 1.2.4                  | 1.10.3        |
+| Rancher Version | Release Date | Host OS                                              | Kubernetes             | Docker        |
+|-----------------|--------------|------------------------------------------------------|------------------------|---------------|
+| 1.3.1           | 2017-01-13   | Ubuntu 14.04/16.04; RHEL/CentOS 7.x; RancherOS 0.7.1 | 1.4.6                  | 1.12.x        |
+| 1.2.2           | 2016-12-01   | Ubuntu 14.04/16.04; RHEL/CentOS 7.x; RancherOS 0.7.1 | 1.4.6                  | 1.12.x        |
+| 1.1.4           | 2016-06-30   | Ubuntu 14.04/15.10; RHEL/CentOS 7.x; RancherOS 0.5.0 | 1.2.4 + Docker 1.10.3<sup>$</sup> | 1.10.x 1.11.x |
+| 1.0.2           | 2016-03-28   | Ubuntu 14.04/15.10; RHEL/CentOS 7.x; RancherOS 0.4.0 | 1.2.4                  | 1.10.3        |
 <sup>$</sup> Kubernetes support is pinned to a specific version of Docker.
 
 * [Rancher v1.2.3](https://github.com/rancher/rancher/releases/tag/v1.2.3) services/versions:
