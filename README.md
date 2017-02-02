@@ -2,7 +2,7 @@
 This is a non-client repo of the Rancher Proof of Concept (POC). This is, this repo does not have a specific client of Redapt in mind. The idea for this repo is to have it as an example Rancher POC to show any customer. It should always have the latest version of Rancher configured.
 
 by Christoph Champ, Redapt, Inc. (January 2017)
-<p><small>last updated: 2017-01-25</small></p>
+<p><small>last updated: 2017-02-02</small></p>
 
 ## Requirements
 
@@ -11,11 +11,11 @@ The Ansible playbooks are expecting the following packages and versions to be in
 * Ansible v2.2.x (tested on 2.2.1.0)
 * Python v2.7.x (tested on 2.7.12)
 * pip packages:
- * awscli==1.11.42
+ * awscli==1.11.44
  * aws-adfs==0.2.0 (only needed for interacting with the AWS accounts sans IAM user accounts)
  * boto==2.45.0
  * boto3==1.4.4
- * botocore==1.5.5
+ * botocore==1.5.7
 
 NOTE: Below is an example of how to use `aws-adfs` for AWS accounts without IAM user accounts:
 ```
