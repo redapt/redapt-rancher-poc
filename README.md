@@ -2,7 +2,7 @@
 This is a non-client repo of the Rancher Proof of Concept (POC). This is, this repo does not have a specific client of Redapt in mind. The idea for this repo is to have it as an example Rancher POC to show any customer. It should always have the latest version of Rancher configured.
 
 by Christoph Champ, Redapt, Inc. (January 2017)
-<p><small>last updated: 2017-02-02</small></p>
+<p><small>last updated: 2017-02-07</small></p>
 
 ## Requirements
 
@@ -24,7 +24,7 @@ aws-adfs login --adfs-host aws-sso.example.com --profile nonprod
 
 ### EC2 instances
 The remote hosts (EC2 instances) that will be running Rancher and/or Kubernetes will have the following packages and versions installed automatically by the related playbooks:
-* Rancher v1.3.3
+* Rancher v1.4.0
 * Docker v1.12.x
 * LVM2
 
@@ -36,6 +36,7 @@ See [Compatibility Matrix](http://rancher.com/support-maintenance-terms/) for de
 
 | Rancher Version | Release Date | Host OS                                              | Kubernetes             | Docker        |
 |-----------------|--------------|------------------------------------------------------|------------------------|---------------|
+| 1.4.0           | 2017-02-04   | Ubuntu 14.04/16.04; RHEL/CentOS 7.x; RancherOS 0.7.1 | 1.4.6                  | 1.10.3, 1.12.x |
 | 1.3.1           | 2017-01-13   | Ubuntu 14.04/16.04; RHEL/CentOS 7.x; RancherOS 0.7.1 | 1.4.6                  | 1.12.x        |
 | 1.2.2           | 2016-12-01   | Ubuntu 14.04/16.04; RHEL/CentOS 7.x; RancherOS 0.7.1 | 1.4.6                  | 1.12.x        |
 | 1.1.4           | 2016-06-30   | Ubuntu 14.04/15.10; RHEL/CentOS 7.x; RancherOS 0.5.0 | 1.2.4 + Docker 1.10.3<sup>$</sup> | 1.10.x 1.11.x |
@@ -54,5 +55,11 @@ See [Compatibility Matrix](http://rancher.com/support-maintenance-terms/) for de
  * rancher/lb-service-haproxy:v0.4.9
  * rancher-compose-v0.12.1
  * rancher-v0.4.1
+* [Rancher v1.4.0](https://github.com/rancher/rancher/releases/tag/v1.4.0) services/versions:
+ * rancher/server:v1.4.0
+ * rancher/agent:v1.2.0
+ * rancher/lb-service-haproxy:v0.5.9
+ * rancher-compose-v0.12.2
+ * rancher-v0.4.1
 
-Starting with version 1.2.0, Rancher no longer supports AWS ELBs and only supports AWS ALB (Application Load Balancers). UPDATE: With Rancher 1.2.3, Rancher has re-introduced being able to [use ELBs with this release](http://docs.rancher.com/rancher/v1.2/en/installing-rancher/installing-server/#elb).
+Starting with version 1.2.0, Rancher no longer supports AWS ELBs and only supports AWS ALB (Application Load Balancers). UPDATE: With Rancher 1.2.3, Rancher has re-introduced being able to [use ELBs with this release](http://docs.rancher.com/rancher/v1.2/en/installing-rancher/installing-server/#elb). UPDATE: With Rancher 1.4.0, Rancher has gone back to recommending using AWS ELBs.
