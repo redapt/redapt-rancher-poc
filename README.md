@@ -2,7 +2,7 @@
 This is a non-client repo of the Rancher Proof of Concept (POC). This is, this repo does not have a specific client of Redapt in mind. The idea for this repo is to have it as an example Rancher POC to show any customer. It should always have the latest version of Rancher configured.
 
 by Christoph Champ, Redapt, Inc. (January 2017)
-<p><small>last updated: 2017-03-10</small></p>
+<p><small>last updated: 2017-03-27</small></p>
 
 ## Requirements
 
@@ -11,11 +11,11 @@ The Ansible playbooks are expecting the following packages and versions to be in
 * Ansible v2.2.x (tested on 2.2.1.0)
 * Python v2.7.x (tested on 2.7.12)
 * pip packages:
- * awscli==1.11.61
- * aws-adfs==0.2.3 (only needed for interacting with the AWS accounts sans IAM user accounts)
+ * awscli==1.11.67
+ * aws-adfs==0.3.0 (only needed for interacting with the AWS accounts sans IAM user accounts)
  * boto==2.46.1
  * boto3==1.4.4
- * botocore==1.5.24
+ * botocore==1.5.30
 
 NOTE: Below is an example of how to use `aws-adfs` for AWS accounts without IAM user accounts:
 ```
@@ -36,6 +36,7 @@ See [Compatibility Matrix](http://rancher.com/support-maintenance-terms/) for de
 
 | Rancher Version | Release Date | Host OS                                              | Kubernetes             | Docker        |
 |-----------------|--------------|------------------------------------------------------|------------------------|---------------|
+| 1.5.3           | 2017-03-24   | Ubuntu 14.04/16.04; RHEL/CentOS 7.x; RancherOS 0.7.1 | 1.5.2                  | 1.12.3+       |
 | 1.4.0           | 2017-02-04   | Ubuntu 14.04/16.04; RHEL/CentOS 7.x; RancherOS 0.7.1 | 1.4.6                  | 1.10.3, 1.12.x |
 | 1.3.1           | 2017-01-13   | Ubuntu 14.04/16.04; RHEL/CentOS 7.x; RancherOS 0.7.1 | 1.4.6                  | 1.12.x        |
 | 1.2.2           | 2016-12-01   | Ubuntu 14.04/16.04; RHEL/CentOS 7.x; RancherOS 0.7.1 | 1.4.6                  | 1.12.x        |
