@@ -2,20 +2,20 @@
 This is a non-client repo of the Rancher Proof of Concept (POC). This is, this repo does not have a specific client of Redapt in mind. The idea for this repo is to have it as an example Rancher POC to show any customer. It should always have the latest version of Rancher configured.
 
 by Christoph Champ, Redapt, Inc. (January 2017)
-<p><small>last updated: 2017-03-27</small></p>
+<p><small>last updated: 2017-04-11</small></p>
 
 ## Requirements
 
 ### Local host
 The Ansible playbooks are expecting the following packages and versions to be installed on the host (the Jenkins server, in this case) the playbooks will be run from:
-* Ansible v2.2.x (tested on 2.2.1.0)
+* Ansible v2.2.x (tested on 2.2.2.0)
 * Python v2.7.x (tested on 2.7.12)
 * pip packages:
  * awscli==1.11.67
- * aws-adfs==0.3.0 (only needed for interacting with the AWS accounts sans IAM user accounts)
+ * aws-adfs==0.3.2 (only needed for interacting with the AWS accounts sans IAM user accounts)
  * boto==2.46.1
  * boto3==1.4.4
- * botocore==1.5.30
+ * botocore==1.5.39
 
 NOTE: Below is an example of how to use `aws-adfs` for AWS accounts without IAM user accounts:
 ```
@@ -24,8 +24,8 @@ aws-adfs login --adfs-host aws-sso.example.com --profile nonprod
 
 ### EC2 instances
 The remote hosts (EC2 instances) that will be running Rancher and/or Kubernetes will have the following packages and versions installed automatically by the related playbooks:
-* Rancher v1.4.0
-* Docker v1.12.x
+* Rancher v1.5.3
+* Docker v1.12.3+
 * LVM2
 
 There will also be some extra sysadmin-related packages useful for troubleshooting installed. For a complete list, see `roles/sysadmin/tasks/main.yml`
