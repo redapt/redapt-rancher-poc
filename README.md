@@ -11,11 +11,11 @@ The Ansible playbooks are expecting the following packages and versions to be in
 * Ansible v2.4.x (tested on 2.4.2.0)
 * Python v2.7.x (tested on 2.7.12)
 * pip packages:
- * awscli==1.14.18
- * aws-adfs==0.4.8 (only needed for interacting with the AWS accounts sans IAM user accounts)
- * boto==2.48.0
- * boto3==1.5.8
- * botocore==1.8.22
+  * awscli==1.14.18
+  * aws-adfs==0.4.8 (only needed for interacting with the AWS accounts sans IAM user accounts)
+  * boto==2.48.0
+  * boto3==1.5.8
+  * botocore==1.8.22
 
 NOTE: Below is an example of how to use `aws-adfs` for AWS accounts without IAM user accounts:
 ```
@@ -48,18 +48,18 @@ See [Compatibility Matrix](http://rancher.com/support-maintenance-terms/) for de
 <sup>$</sup> Kubernetes support is pinned to a specific version of Docker.
 
 * [Rancher v.1.6.12](https://github.com/rancher/rancher/releases/tag/v1.6.12) services/versions:
- * rancher/server:v1.6.12
- * rancher/agent:v1.2.7
- * rancher/lb-service-haproxy:v0.7.15
- * rancher-v0.6.5
- * rancher-compose-v0.12.5
+  * rancher/server:v1.6.12
+  * rancher/agent:v1.2.7
+  * rancher/lb-service-haproxy:v0.7.15
+  * rancher-v0.6.5
+  * rancher-compose-v0.12.5
 
 * Supported Docker Versions
- * Docker 1.12.3-1.12.6
- * Docker 1.13.1
- * Docker 17.03-ce/ee
- * Docker 17.06-ce/ee
- * Docker 17.09-ce/ee
+  * Docker 1.12.3-1.12.6
+  * Docker 1.13.1
+  * Docker 17.03-ce/ee
+  * Docker 17.06-ce/ee
+  * Docker 17.09-ce/ee
 
 Note: Kubernetes 1.8 supports Docker 1.12.6, 1.13.1 and 17.03.2. Kubernetes 1.7 supports up to Docker 1.12.6.
 
