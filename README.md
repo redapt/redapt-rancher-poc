@@ -11,11 +11,11 @@ The Ansible playbooks are expecting the following packages and versions to be in
 * Ansible v2.4.x (tested on 2.4.2.0)
 * Python v2.7.x (tested on 2.7.12)
 * pip packages:
-  * awscli==1.14.18
-  * aws-adfs==0.4.8 (only needed for interacting with the AWS accounts sans IAM user accounts)
+  * awscli==1.15.16
+  * aws-adfs==0.10.1 (only needed for interacting with the AWS accounts sans IAM user accounts)
   * boto==2.48.0
-  * boto3==1.5.8
-  * botocore==1.8.22
+  * boto3==1.7.16
+  * botocore==1.10.16
 
 NOTE: Below is an example of how to use `aws-adfs` for AWS accounts without IAM user accounts:
 ```
